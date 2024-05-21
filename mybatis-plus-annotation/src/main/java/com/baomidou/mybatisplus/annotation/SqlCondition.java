@@ -39,6 +39,8 @@ public class SqlCondition {
      * % 两边 % [oracle使用]
      */
     public static final String ORACLE_LIKE = "%s LIKE CONCAT(CONCAT('%%',#{%s}),'%%')";
+
+    public static final String POSTGREP_LIKE = "%s LIKE '%%' || #{%s} || '%%'";
     /**
      * % 左
      */
